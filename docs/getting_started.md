@@ -4,7 +4,7 @@
 ## Installation
 
 ```
-pip install git+https://github.com/michaeltneylon/lofn.git
+pip install lofn
 ```
 
 ## Dependencies
@@ -52,5 +52,5 @@ See the next page 'Using lofn on AWS' for instructions on how to setup an EMR cl
 
 ## Examples
 
-Explore some of our [examples](https://github.com/michaetneylon/lofn/blob/master/example) to get started.
+Explore some of our [examples](https://github.com/michaeltneylon/lofn/blob/master/example) to get started.
 

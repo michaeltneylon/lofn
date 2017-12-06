@@ -28,7 +28,7 @@ sudo usermod -a -G docker hadoop
 sudo usermod -a -G docker yarn
 sudo /sbin/stop hadoop-yarn-resourcemanager
 sudo /sbin/start hadoop-yarn-resourcemanager
-sudo pip install git+https://github.com/michaeltneylon/lofn.git
+sudo pip install lofn
 ```
 
 #### Worker Node
@@ -44,7 +44,7 @@ sudo usermod -a -G docker hadoop
 sudo usermod -a -G docker yarn
 sudo /sbin/stop hadoop-yarn-nodemanager
 sudo /sbin/start hadoop-yarn-nodemanager
-sudo pip install git+https://github.com/michaeltneylon/lofn.git
+sudo pip install lofn
 ```
 
 exit each shell and log back in for Docker group changes to take effect.
@@ -77,7 +77,7 @@ sudo yum install -y git docker
 sudo service docker start
 sudo groupadd docker
 sudo usermod -a -G docker hadoop
-sudo pip install git+https://github.com/michaeltneylon/lofn.git
+sudo pip install lofn
 ```
 
 ##### Step
@@ -150,7 +150,7 @@ Build the image, tag it, and push it into the registry. In the example below we 
 
 ```
 git clone https://github.com/michaeltneylon/lofn.git
-cd LRL_INFX_LOFN/example/advanced/gsnap_samtools
+cd lofn/example/advanced/gsnap_samtools
 docker build -t gsnap_samtools .
 docker tag gsnap_samtools localhost:5000/gsnap_samtools
 docker push localhost:5000/gsnap_samtools
