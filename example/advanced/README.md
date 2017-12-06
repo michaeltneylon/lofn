@@ -20,7 +20,7 @@ Review:
 
 ### Install Docker, Spark, and lofn
 
-[Getting Started](https://github.com/michaetneylon/lofn/docs/)
+[Getting Started](http://lofn.readthedocs.io/en/latest/getting_started.html)
 
 ### Docker Images
 

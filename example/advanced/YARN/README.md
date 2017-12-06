@@ -12,7 +12,7 @@ Setup an EMR cluster with 1 master and 3 workers. Set the root device EBS volume
 
 ### EMR Setup
 
-See the [documentation](../../../docs/lofn_on_amazon.md) on how to setup an Amazon EMR cluster for lofn.
+See the [documentation](http://lofn.readthedocs.io/en/latest/lofn_on_amazon.html) on how to setup an Amazon EMR cluster for lofn.
 
 ## Build and Serve Images
 
@@ -29,7 +29,7 @@ Build the image, tag it, and push it into the registry:
 
 ```
 git clone https://github.com/michaeltneylon/lofn.git
-cd LRL_INFX_LOFN/example/advanced/gsnap_samtools
+cd lofn/example/advanced/gsnap_samtools
 docker build -t gsnap_samtools .
 docker tag gsnap_samtools localhost:5000/gsnap_samtools
 docker push localhost:5000/gsnap_samtools
