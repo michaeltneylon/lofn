@@ -5,7 +5,7 @@ Parallelize your serial tool using Spark and Docker.
 Build a docker image for your tool and wrap it with this framework along with
 a map and reduce command.
 
-See the [docs](#documentation) for more detailed documentation and advanced features.
+See the [docs](https://lofn.readthedocs.org) for more detailed documentation and advanced features.
 
 See [example](example) to get an idea of how this can be used.
 
@@ -13,7 +13,7 @@ See [example](example) to get an idea of how this can be used.
 
 Install the latest released version with:
 
-`pip install git+https://github.com/michaeltneylon/lofn.git`
+`pip install lofn`
 
 ## Usage
 
@@ -32,7 +32,7 @@ the command to run in that image. This returns a new RDD.
 4. Use the reduce method to input the mapped RDD to bring back a final
 result, using a Docker image and command.
 
-See the [documentation](#documentation).
+See the [documentation](https://lofn.readthedocs.org).
 
 A very basic template:
 
@@ -60,31 +60,3 @@ sc.stop()
 ```
 
 Use `spark-submit` to run this script in Spark.
-
-## Documentation
-
-lofn must be installed prior to these steps to automatically generate documentation from the package.
-
-Build documentation from source with Make:
-
-```
-cd docs
-pip install -r requirements.txt
-make html
-```
-
-or use `sphinx` directly:
-
-```
-cd docs
-pip install -r requirements.txt
-sphinx-build -b . _build/html'
-```
-
-Then navigate to the path `_build/html/index.html` in your browser or serve the directory:
-
-```
-cd _build/html
-(py2): python -m SimpleHTTPServer
-(py3): python -m http.server
-```
